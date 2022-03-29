@@ -1,0 +1,100 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap");
+.card {
+  border: 3px solid #a1683a;
+  border-radius: 0.625em;
+  box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.1);
+  padding: 0.625em;
+  background-color: #fcf7f3;
+}
+.card h2 {
+  font-weight: 500;
+  font-size: 1.5em;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 16px;
+  font-family: "Open Sans", sans-serif;
+}
+
+header {
+  background-color: #6a9a8a;
+  color: #141e1f;
+  padding: 0.625em 0.3125em;
+  text-align: center;
+}
+
+h1 {
+  font-size: 2.25em;
+  font-weight: 700;
+}
+
+.main {
+  background-color: #f5e8db;
+  color: #270902;
+  padding: 0.625em;
+}
+.main p {
+  margin: 0.3125em 0;
+}
+
+.card {
+  width: 100%;
+  max-width: 25em;
+  margin: auto;
+  margin-bottom: 0.625em;
+}
+.card:last-of-type {
+  margin-bottom: 0;
+}
+
+.recipe {
+  text-align: center;
+}
+.recipe img {
+  width: 66%;
+  height: auto;
+  max-width: 12.5em;
+}
+
+.btn {
+  display: inline-block;
+  background-color: #a1683a;
+  color: black;
+  margin-top: 0.3125em;
+  padding: 0.3125em 0.625em;
+  border-radius: 0.3125em 0.3125em;
+  font-weight: 500;
+  text-decoration: none;
+}
+.btn:hover {
+  box-shadow: inset 5px 5px 5px 1px rgba(0, 0, 0, 0.2);
+  text-decoration: none;
+}
+
+picture {
+  display: block;
+  width: 100%;
+  text-align: center;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  max-width: 37.125em;
+  margin: auto;
+}
+
+.details {
+  list-style-position: inside;
+}
+.details li {
+  margin-top: 0.3125em;
+}
+
+/*# sourceMappingURL=styles.css.map */

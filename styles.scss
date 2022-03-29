@@ -1,0 +1,114 @@
+@use "sass:math";
+@use "sass:color";
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap');
+
+//font variable
+$font-stack: 'Open Sans', sans-serif;
+
+//color variables
+$text: hsl(12, 90, 8);
+$background: hsl(30, 57, 91);
+$card-bg: hsl(30, 57, 97);
+$accent: hsl(27, 47, 43);
+$hero-bg: hsl(160, 19, 51);
+$hero-txt: hsl(187, 22, 10);
+
+//card extender
+%base-card {
+    border: 3px solid $accent;
+    border-radius: math.div(10em, 16);
+    box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.1);
+    padding: math.div(10em, 16);
+    background-color: $card-bg;
+    h2 {
+        font-weight: 500;
+        font-size: math.div(24em, 16);
+    }
+}
+
+//css reset
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-size: 16px;
+    font-family: $font-stack;
+}
+
+header {
+    background-color: $hero-bg;
+    color: $hero-txt;
+    padding: math.div(10em, 16) math.div(5em, 16);
+    text-align: center;
+}
+
+h1{
+    font-size: math.div(36em, 16);
+    font-weight: 700;
+}
+
+.main {
+    background-color: $background;
+    color: $text;
+    padding: math.div(10em, 16);
+    p {
+        margin: math.div(5em, 16) 0;
+    }
+}
+
+.card {
+    @extend %base-card;
+    width: 100%;
+    max-width: math.div(400em, 16);
+    margin: auto;
+    margin-bottom: math.div(10em, 16);
+    &:last-of-type{
+        margin-bottom: 0;
+    }
+}
+
+.recipe {
+    text-align: center;
+    img {
+        width: 66%;
+        height: auto;
+        max-width: math.div(200em, 16);
+        
+    }
+}
+
+.btn {
+    display: inline-block;
+    background-color: $accent;
+    color: black;
+    margin-top: math.div(5em, 16);
+    padding: math.div(5em, 16) math.div(10em, 16);
+    border-radius: math.div(5em, 16) math.div(5em, 16);
+    font-weight: 500;
+    text-decoration: none;
+    &:hover{
+        box-shadow: inset 5px 5px 5px 1px rgba(0, 0, 0, 0.2);
+        text-decoration: none;
+    }
+}
+
+picture{
+    display: block;
+    width: 100%;
+    text-align: center;
+}
+img{
+    width: 100%;
+    height: auto;
+    max-width: math.div(594em, 16);
+    margin: auto;
+}
+
+.details{
+    list-style-position: inside;
+    li{
+        margin-top: math.div(5em, 16);
+    }
+}
